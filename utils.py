@@ -22,3 +22,12 @@ def put(ch,x,y,col=0):
   print(f'\033[{y};{x}H',end='')
   print(f'\033[{col}m'+ch+'\033[0m',end='')
   print(end='',flush=True)
+  
+def int2base(num, base, abc="0123456789abcdefghijklmnopqrstuvwxyz"):
+  if num < 0:
+    return '-' + int2base(-num, base, abc)
+  output = abc[num % base] # rightmost digit
+  while num >= base:
+    num //= base # move to next digit to the left
+    output = abc[num % base] + output # this digit
+  return output
