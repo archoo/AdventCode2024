@@ -19,7 +19,7 @@ def mv(x,y):
   print(f'\033[{y};{x}H',end='')
 
 def put(ch,x,y,col=0):
-  print(f'\033[{y};{x}H',end='')
+  print(f'\033[{y+1};{x+1}H',end='')
   print(f'\033[{col}m'+ch+'\033[0m',end='')
   print(end='',flush=True)
   
@@ -64,3 +64,23 @@ def get_prime_factors(n, primelist=None):
             fs.append((p, count))
     return fs
 
+
+def plotLine(x0, y0, x1, y1):
+  dx = abs(x1 - x0)
+  sx = 1 if x0 < x1 else -1
+  dy = -abs(y1 - y0)
+  sy = 1 if y0 < y1 else -1
+  error = dx + dy
+    
+  line = []
+  while True:
+    line.append((x0, y0))
+    if x0 == x1 and y0 == y1: break
+    e2 = 2 * error
+    if e2 >= dy:
+      error = error + dy
+      x0 = x0 + sx
+    if e2 <= dx:
+      error = error + dx
+      y0 = y0 + sy
+  return line
