@@ -1,6 +1,6 @@
 import sys,os,re,itertools
 
-rawdata = [[int(c) for c in r.strip().split()] for r in open('day_02.txt','rt').readlines()]
+rawdata = [[int(c) for c in r.strip().split()] for r in open('inputs/day_02.txt','rt').readlines()]
 s=0
 for row in rawdata:
   safe = True

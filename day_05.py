@@ -1,6 +1,6 @@
 import sys,os,re,itertools
 
-rawdata = [r.strip() for r in open('day_05.txt','rt').readlines() if r.strip() != '']
+rawdata = [r.strip() for r in open('inputs/day_05.txt','rt').readlines() if r.strip() != '']
 rules = []
 updates = []
 for row in rawdata:

@@ -1,6 +1,6 @@
 import sys,os,re,itertools
 
-rawdata = [r for r in open('day_03.txt','rt').readlines()]
+rawdata = [r for r in open('inputs/day_03.txt','rt').readlines()]
 t=0
 go = True
 for row in rawdata:

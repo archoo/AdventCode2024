@@ -2,7 +2,7 @@ import sys,os,re,itertools,time,copy,string
 from utils import *
 os.system('color & cls')
 
-rawdata = [[c for c in r.strip()] for r in open('day_06.txt','rt').readlines()]
+rawdata = [[c for c in r.strip()] for r in open('inputs/day_06.txt','rt').readlines()]
 w,h = len(rawdata[0]),len(rawdata)
 lim = 0
 

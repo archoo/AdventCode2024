@@ -1,6 +1,6 @@
 import sys,os,re,itertools
 
-rawdata = [r.strip() for r in open('day_01.txt','rt').readlines()]
+rawdata = [r.strip() for r in open('inputs/day_01.txt','rt').readlines()]
 l1,l2 = [],[]
 for row in rawdata:
   a,b = row.split()

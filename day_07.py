@@ -1,7 +1,7 @@
 import sys,os,re,itertools
 from utils import *
 
-rawdata = [[r.strip().split(':')[0],r.strip().split(':')[1].strip().split()] for r in open('day_07.txt','rt').readlines()]
+rawdata = [[r.strip().split(':')[0],r.strip().split(':')[1].strip().split()] for r in open('inputs/day_07.txt','rt').readlines()]
 newdata = []
 tot = 0
 tot_oper = 3

@@ -1,6 +1,6 @@
 import sys,os,re,itertools
 
-rawdata = [r.strip() for r in open('day_04.txt','rt').readlines()]
+rawdata = [r.strip() for r in open('inputs/day_04.txt','rt').readlines()]
 dir = {'N':(0,-1),
        'NE':(1,-1),
        'E':(1,0),

@@ -1,6 +1,6 @@
 import sys,os,re,itertools
 
-rawdata = [r.strip() for r in open('day_04.txt','rt').readlines()]
+rawdata = [r.strip() for r in open('inputs/day_04.txt','rt').readlines()]
 dir = {'NW':(-1,-1),'NE':(1,-1),'SW':(-1,1),'SE':(1,1)}
 
 w,h = len(rawdata[0]),len(rawdata)
