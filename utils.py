@@ -15,6 +15,11 @@ dir = {'N':(0,-1),
        'W':(-1,0),
        'NW':(-1,-1)}
 
+import os
+def turtle():
+  os.system('cls & color')
+  print(f'\033[?25l')
+
 def mv(x,y):
   print(f'\033[{y};{x}H',end='')
 
